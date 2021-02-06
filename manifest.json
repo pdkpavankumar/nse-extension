@@ -16,7 +16,7 @@
     "default_title": "Download nse files",
     "default_popup": "popup.html",
     "default_icon": {
-      "32": "icon/icon.png"
+      "32": "icon.png"
     }
   }
  }
