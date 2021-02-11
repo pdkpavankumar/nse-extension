@@ -7,7 +7,7 @@
   var combo1 = document.querySelector('#select_symbol');
   var combo2 = document.querySelector('#expirySelect');
   var goBtn = document.querySelector('#symbolSearchGo');
-  var dwnloadBtn = document.querySelector('#optionchain_equity_sp > div > div > div.row.my-3 > div.xlsDownload-wrp.col.d-flex.justify-content-end > div.xlsdownload > a');
+  var dwnloadBtn = document.querySelector('#downloadOCTable');
   var options = window.array.split(',').map(ele => ele.trim());
   var date = window.date;
   var i = 0
@@ -15,7 +15,7 @@
     var option = options[i];
     combo1.value = option;
     combo2.value = date;
-    goBtn.click();
+    //goBtn.click();
     setTimeout(() => {
       var date = new Date().toLocaleDateString();
       //dwnloadBtn.setAttribute("onclick", "export_table_to_csv(this, 'optionChainTable-indices', '" + options[i] + '-' + date + "', 'csv')");
